@@ -32,4 +32,3 @@ Mielőtt belekezdenénk az OpenCore-os rendszer felépítésébe, át kell nézn
    * Windows vagy Linux felhasználóknak, **15GB** szabad tárhelyre a lemezen amin dolgozol. Windows-on, az Operációs rendszered lemezén (C:) rendelkezned kell **15GB** szabad tárhellyel.
    * macOS felhasználóknak, **30GB** szabad táhelyre a lemezen.
    * A legtöbb terminál eszköz ami ebben az útmutatóban van használva igényeli a [Python](https://www.python.org/downloads/)-t.
- 
