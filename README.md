@@ -10,8 +10,7 @@ meta:
   content: "Jelenleg támogatott verzió: 0.7.2"
 ---
 #### _**Megjegyzés:**_ Ez az útmutató egy nem hivatalos fordítása az angol [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide)-nak. Ha bármit nem értesz, akkor azért elnézést, nehéz mindent értelmesen lefordítani, ilyen esetben keresd ki az angol fordításban, hátha ott jobban érthető.
-# Mi az az OpenCore és kinek lett
-kitalálva?
+# Mi az az OpenCore és kinek lett kitalálva?
 
 Az OpenCore egy úgynevezett "boot loader" –  egy komplex szoftver ami előkészíti a gépet az operációs rendszer betöltésére – pontosabban a feladata az, hogy új adatot szolgáltasson a macOS számára, mint például SMBIOS, ACPI táblák és kext-ek. Amiben ez az eszköz különbözik a többi megoldástól, az az, hogy az OpenCore a biztonságra és a minőségre lett tervezve az alapoktól, ezzel lehetővé teszi nekünk olyan biztonsági beállítások használatát mint a [System Integrity Protection](https://support.apple.com/en-ca/HT204899) és a [FileVault](https://support.apple.com/en-ca/HT204837). Mélyebben ebben a cikkben tudsz róla olvasni: [Miért az OpenCore mindenek felett](why-oc.md)
 
