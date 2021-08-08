@@ -1,34 +1,35 @@
-# Getting started with OpenCore
+# Első lépések az OpenCore-al
 
-Before we can jump head first into making an OpenCore based system, we need to go over a few things.
+Mielőtt belekezdenénk az OpenCore-os rendszer felépítésébe, át kell nézni pár dolgot. 
 
-## Prerequisites
+## Előfeltételek
 
-1. <span style="color:red">_**[CRUCIAL]**_</span> Time and patience.
-   * Don't start working on this if you have deadlines or important work. Hackintoshes are not something you should be relying on as a work machine.
-2. <span style="color:red">_**[CRUCIAL]**_</span> **KNOW YOUR HARDWARE**
-   * Your CPU name and its generation
-   * Your GPUs
-   * Your storage devices (HDD/SSD, NVMe/AHCI/RAID/IDE configuration)
-   * Your laptop/desktop model if from an OEM
-   * Your **Ethernet chipset**
-   * Your WLAN/Bluetooth chipset
-3. <span style="color:red">_**[CRUCIAL]**_</span> **A BASIC KNOWLEDGE OF COMMAND LINES AND HOW TO USE A TERMINAL/COMMAND PROMPT**
-   * This is not just [CRUCIAL], this is the basis of this whole guide. We can't help you if you don't know how to `cd` to a directory or delete a file.
-4. <span style="color:red">_**[CRUCIAL]**_</span> A machine that is compatible as seen in the _**Compatibility**_ section.
-   * [Hardware Limitations page](macos-limits.md)
-5. <span style="color:red">_**[CRUCIAL]**_</span> A minimum of:
-   * 16GB USB if you're going to use macOS to create the USB
-   * 4GB USB if you're going to use Windows or Linux for USB creation
-6. <span style="color:red">_**[CRUCIAL]**_</span> An **Ethernet connection** (no WiFi dongles, Ethernet USB adapter may work depending on macOS support) and you must know your LAN card's model
-   * You must either have a physical Ethernet port, or a compatible macOS Ethernet dongle/adapter. In case you have a [compatible WiFi card](https://dortania.github.io/Wireless-Buyers-Guide/), you can also use that.
-     * Note the majority of WiFi cards are not supported by macOS
-   * For people who can't use ethernet but have an Android phone, you can connect your Android phone to WiFi and then tether it using USB with [HoRNDIS](https://joshuawise.com/horndis#available_versions).
-7. <span style="color:red">_**[CRUCIAL]**_</span> **Proper OS Installation:**
+1. <span style="color:red">_**[FONTOS]**_</span> Idő és türelem.
+   * Ne kezdj bele ebbe, ha nincs sok szabadidőd vagy határidőkkel dolgozol. A Hackintosh-olt számítógép nem egy munkára használható eszköz, a rendszer nem elég stabil és megbízható, ezt tartsd észben.
+2. <span style="color:red">_**[FONTOS]**_</span> **ISMERD A HARVERED**
+   * A processzorod nevét és generációját
+   * A videókártyád
+   * A tárolóeszközeid (HDD/SSD, NVMe/AHCI/RAID/IDE konfiguráció)
+   * A laptopod/asztali géped modelljét, ha előre öszzeállított gépről van szó
+   * Az **Ethernet chipset-ed**
+   * A WLAN/Bluetooth chipset-ed
+3. <span style="color:red">_**[FONTOS]**_</span> **EGY ALAPTUDÁS A PARACSSORHOZ ÉS, HOGY HOGYAN KELL HASZNÁLNI A TERMINÁLT**
+   * Ez nem csak <span style="color:red">_**[FONTOS]**_</span>, ez az egész útmutató alapja. Nem tudunk segíteni akkor ha egy alap `cd` paranccsal se tudsz belépni egy mappába.
+4. <span style="color:red">_**[FONTOS]**_</span> Egy számítógép ami megfelel a _**Kompatibilitási**_ oldalon leírtaknak.
+   * [Hardver limitációk oldal](macos-limits.md)
+5. <span style="color:red">_**[FONTOS]**_</span> Egy minimum:
+   * 16GB pendrive, ha macOS-en szeretnéd elkészíteni a telepítőt
+   * 4GB pendrive, ha Windows-on vagy Linux-on szeretnéd elkészíteni a telepítőt
+6. <span style="color:red">_**[FONTOS]**_</span> Egy **Vezetékes Internetkapcsolat** és tudnod is kell a LAN kártyád modelljét.
+   * Rendelkezned kell egy fizikai LAN porttal, vagy egy macOS-el kompatibilis adapterrel. Ha van egy [kompatibilis WiFi kártyád](https://duszmox.github.io/Wireless-Buyers-Guide/), akkor azt is használhatod.
+     * Megjegyzés: A wifi kártyák nagy része nem, vagy nem teljesen kompatibilis a macOS-el.
+   * Ha nincs vezetékes internetkapcsolatod, de rendelkezel egy Androidos mobiltelefonnal, akkor csatlakoztathatod azt is wifihez és tovább oszthatod annak a jelét USB-n keresztül a [HoRNDIS](https://joshuawise.com/horndis#available_versions) segítségével.
+7. <span style="color:red">_**[FONTOS]**_</span> **Egy megfelelő operációs rendszerre:**
    * Be it:
-     * macOS (a fairly recent one would be better)
-     * Windows (Windows 10, 1703 or newer)
-     * Linux (Clean and properly functioning, with Python 2.7 or later)
-   * For Windows or Linux users, **15GB** of free space on the drive you're working on. On Windows, your OS disk (C:) must have at least **15GB** of free space.
-   * For macOS users, **30GB** of free space on the system's drive.
-   * Most tools used in this guide will also require [Python installed](https://www.python.org/downloads/)
+     * macOS (egy viszonylag újabb jobb lenne)
+     * Windows (Windows 10, 1703 vagy újabb)
+     * Linux (Egy tiszta, megfelelően működő rendszer, Python 2.7 vagy újabbal rajta)
+   * Windows vagy Linux felhasználóknak, **15GB** szabad tárhelyre a lemezen amin dolgozol. Windows-on, az Operációs rendszered lemezén (C:) rendelkezned kell **15GB** szabad tárhellyel.
+   * macOS felhasználóknak, **30GB** szabad táhelyre a lemezen.
+   * A legtöbb terminál eszköz ami ebben az útmutatóban van használva igényeli a [Python](https://www.python.org/downloads/)-t.
+ 

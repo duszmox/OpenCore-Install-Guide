@@ -1,42 +1,42 @@
-# Hardware Limitations
+# Hardver Limitációk
 
-With macOS, there are numerous hardware limitations you need to be aware of before stepping foot into an installation. This is due to the limited amount of hardware Apple supports, so we're either limited by Apple or what patches the community has created.
+Amikor egy macOS tleepítésről beszélünk akkor rengeteg hardver limitáció van amiről tudnunk kell mielőtt bármibe belekezdenénk. Ennek a fő indoka, hogy maga az Apple sem támogat sok hardvert, szóval vagy maradunk azokkal amiket támogatnak, vagy a közösség általi patch-eket használjuk. 
 
-The main hardware sections to verify are:
+A fő hardverek amire figyelni kell:
 
 [[toc]]
 
-And for more detailed guides on the subject, see here:
+A témába jobban belemerülő útmutatókat itt tudod elolvasni:
 
-* [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/)
-  * Check if your GPU is supported and which macOS version you can run.
-* [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/)
-  * Check if your WiFi card is supported.
-* [Anti-Hardware Buyers Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
-  * Overall guide on what to avoid and what pitfalls your hardware may hit.
+* [Videókárta vásárlási útmutató](https://duszmox.github.io/GPU-Buyers-Guide/)
+  * Nézd meg, hogy támogatja-e a macOS a Videókártyád
+* [Vezetéknélküli adapter vásárlási útmutató](https://duszmox.github.io/Wireless-Buyers-Guide/)
+  * Nézd meg, hogy támogatva van-e a Vezetéknálküli Hálózati Kátyád
+* [Mit ne vegyél útmutató](https://duszmox.github.io/Anti-Hackintosh-Buyers-Guide/)
+  * Egy összesített útmutató, hogy milyen hardvereket kell messziről elkerülni
 
-## CPU Support
+## Processzorok támogatása
 
-For CPU support, we have the following breakdown:
+A processzorok támogatásához kapcsolódóan, ezekről tudunk beszélni:
 
-* Both 32 and 64-bit CPUs are supported
-  * This however requires the OS to support your architecture, see CPU Requirements section below
-* Intel's Desktop CPUs are supported.
-  * Yonah through Comet Lake are supported by this guide.
-* Intel's High-End Desktops and Server CPUs.
-  * Nehalem through Cascade Lake X are supported by this guide.
-* Intel's Core "i" and Xeon series laptop CPUs
-  * Arrandale through Ice Lake are supported by this guide.
-  * Note that Mobile Atoms, Celeron and Pentium CPUs are not supported
-* AMD's Desktop Bulldozer (15h), Jaguar (16h) and Ryzen (17h) CPUs
-  * Laptop CPUs are **not** supported
-  * Note not all features of macOS are supported with AMD, see below
+* Mind a 32 és a 64-bit processzorok támogatva vannak
+  * Viszont az Operációs rendszer verziója befolyásolja az architektura támogatását, több részletért olvasd el a részletes leírást lejjebb
+* Az asztali Intel processzorok támogatva vannak
+  * Egészen a Yonah-tól a Comet Lake-ig találsz leírást ebben az útmutatóban
+* Az High-End és Szerver Intel processzorok is támogatva vannak
+  * Egészen Nehalem-től Cascade Lake X-ig találsz leírást ebbben az útmutatóban
+* Az Intel Core "i" és Xeon laptop processzorok is támogatva vannak
+  * Arrandale-től Ice Lake-ig van leírás ebben az útmutatóban.
+  * Megjegyzés: Mobil Atom, Celeron és Pentium processzorok nincsenek támogatva
+* AMD asztali Buldozer (15h), Jaguar (16h) és Ryzen (17h) processzorok mind támogatva vannak
+  * Laptop processzorok **nincsenek** támogatva
+  * Megjegyzés: Minden macOS feature támogatva van, bővebb leírást lejjebb találsz
 
-**For more in-depth information, see here: [Anti-Hardware Buyers Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)**
+**További információért olvasd el a [Mit ne vegyél útmutató](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)-t**
 
-::: details CPU Requirements
+::: details Processzor Követelmények
 
-Architecture Requirements
+Architekturális Követelmények
 
 * 32-bit CPUs are supported from 10.4.1 to 10.6.8
   * Note that 10.7.x requires 64-bit userspace, limiting 32-bit CPUs to 10.6

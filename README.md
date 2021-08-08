@@ -1,26 +1,25 @@
 ---
 home: true
 heroImage: /dortania-logo-clear.png
-heroText: Dortania's OpenCore Install Guide
-actionText: Getting Started→
+heroText: Dortania OpenCore Telepítési Útmutatója
+actionText: Előkészületek →
 actionLink: prerequisites.md
 
 meta:
 - name: description
-  content: Current supported version 0.7.0
+  content: "Jelenleg támogatott verzió: 0.7.0"
 ---
+#### _**Megjegyzés:**_ Ez az útmutató egy nem hivatalos fordítása az angol [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide)-nak. Ha bármit nem értesz, akkor azért elnézést, nehéz mindent értelmesen lefordítani, ilyen esetben keresd ki az angol fordításban, hátha ott jobban érthető.
+# Mi az az OpenCore és kinek lett kitalálva?
 
-# What is OpenCore and who is this guide for
+Az OpenCore egy úgynevezett "boot loader" –  egy komplex szoftver ami előkészíti a gépet az operációs rendszer betöltésére – pontosabban a feladata az, hogy új adatot szolgáltasson a macOS számára, mint például SMBIOS, ACPI táblák és kext-ek. Amiben ez az eszköz különbözik a többi megoldástól, az az, hogy az OpenCore a biztonságra és a minőségre lett tervezve az alapoktól, ezzel lehetővé teszi nekünk olyan biztonsági beállítások használatát mint a [System Integrity Protection](https://support.apple.com/en-ca/HT204899) és a [FileVault](https://support.apple.com/en-ca/HT204837). Mélyebben ebben a cikkben tudsz róla olvasni: [Miért az OpenCore mindenek felett](why-oc.md)
 
-OpenCore is what we refer to as a "boot loader" – it is a complex piece of software that we use to prepare our systems for macOS – specifically by injecting new data for macOS such as SMBIOS, ACPI tables and kexts. How this tool differs from others like Clover is that it has been designed with security and quality in mind, allowing us to use many security features found on real Macs, such as [System Integrity Protection](https://support.apple.com/en-ca/HT204899) and [FileVault](https://support.apple.com/en-ca/HT204837). A more in-depth look can be found here: [Why OpenCore over Clover and others](why-oc.md)
+Ez az útmutató két fő dologra fókuszál:
 
-This guide specifically focuses on two main things:
+* macOS telepítése X86 alapú számítógépeken
+* Elmagyarázni neked, mi teszi műkdő képessé a Hackintosh-od.
 
-* Installing macOS on an X86-based PC
-* Teaching you what makes your Hack work
+Emiatt készülj fel, hogy sokat fogsz olvasni, tanulni és Google-n keresni. Ez nem egy két kattintásos telepítés lesz.
 
-Because of this, you will be expected to read, learn and even use Google. This is not a simple one-click install setup.
-
-Please remember that OpenCore is still new and currently in beta. While quite stable, and arguably much more stable than Clover in pretty much every way, it is still being frequently updated, so chunks of configuration change quite often (i.e. new quirks replacing old ones).
-
-Lastly, those having issues can visit both the [r/Hackintosh subreddit](https://www.reddit.com/r/hackintosh/) and [r/Hackintosh Discord](https://discord.gg/u8V7N5C) for more help.
+Kérlek tartsd szem előtt, hogy az OpenCore még mindig egy új fejlesztésnek számít és még bétában van. Ez nem azt jelenti, hogy nem stabil, sőt szinte minden szempontban sokkal stabilabb, mint más megoldások, mint például a Clover, ezen kívül még mindig aktívan fejlesztés alatt áll, szóval a konfigurációs fájl elég gyakran változik is (pl. új beállítások jönnek régiek helyére).
+Ha bármilyen problémád akad, akkor keress rá a [Hibaelhárítási oldalon](/troubleshooting/troubleshooting.md), ha nem találsz semmi hozzákapcsolódót, akkor kérj segítséget az [r/Hackintosh subreddit](https://www.reddit.com/r/hackintosh/)-en vagy az [r/Hackintosh Discord](https://discord.gg/u8V7N5C) szerveren.
